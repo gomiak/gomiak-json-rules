@@ -1,0 +1,1 @@
+# gomiak-json-rules
