@@ -11,15 +11,15 @@ export default function evaluate(input, data) {
 }
 
 function evaluateSingle(rule, data) {
-    const val = data[rule.field];
+    const value = data[rule.field];
     const operatorFn = operatorMap.get(rule.operator);
-    return operatorFn(val, rule.value);
+    return operatorFn(value, rule.value);
 }
 
 function evaluateSet(rules, data) {
     return rules.every((rule) => {
-        const val = data[rule.field];
+        const value = data[rule.field];
         const operatorFn = operatorMap.get(rule.operator);
-        return operatorFn(val, rule.value);
+        return operatorFn(value, rule.value);
     });
 }
