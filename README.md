@@ -6,16 +6,21 @@ gomiak-json-rules is a lightweight and flexible rule engine for evaluating busin
 
 ## Features
 
--   Evaluate single or multiple rules
--   Supports common operators:
-    -   `==`, `!=`, `>`, `>=`, `<`, `<=`
-    -   `contains`, `notContains`, `startsWith`, `endsWith`
-    -   `length==`, `length>=`, `length<=`
-    -   `in`, `notIn`, `includes`
-    -   `matches` (regex), `isEmail`, `isEmpty`, `exists`, `isNumber`
--   Accepts flexible input: single rule object or an array of rules
--   Lightweight and easy to integrate in Node.js and frontend JavaScript projects
--   Easily extensible with custom operators
+- Evaluate single or multiple rules
+- Supports common operators:
+  - `==`, `===`, `!=`, `!==`
+  - `>`, `>=`, `<`, `<=`
+  - `length==`, `length>`, `length<`, `length>=`, `length<=`
+  - `exists`, `notExists`
+  - `in`, `notIn`
+  - `includes`, `notIncludes`
+  - `isEmpty`, `isNumber`
+  - `startsWith`, `endsWith`
+  - `matchRegex` (regex match)
+  - `isEmail`
+- Accepts flexible input: single rule object or an array of rules
+- Lightweight and easy to integrate in Node.js and frontend JavaScript projects
+- Easily extensible with custom operators
 
 ---
 
