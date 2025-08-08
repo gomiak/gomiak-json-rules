@@ -1,8 +1,10 @@
 export class OperatorMap {
     constructor() {
         this.operators = {
-            '==': (a, b) => typeof a === 'number' && a == b,
-            '===': (a, b) => typeof a === 'number' && a === b,
+            '==': (a, b) => a == b,
+            '===': (a, b) => a === b,
+            '!=': (a, b) => a != b,
+            '!==': (a, b) => a !== b,
             '>': (a, b) => typeof a === 'number' && a > b,
             '<': (a, b) => typeof a === 'number' && a < b,
             '>=': (a, b) => typeof a === 'number' && a >= b,
