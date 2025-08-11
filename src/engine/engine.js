@@ -24,7 +24,7 @@ class RulesEngine {
         if (!this.validateInput(rules, data)) {
             throw new Error('Invalid rules or data object');
         }
-        const validations = rules['validations'];
+        const validations = rules.validations;
         for (const key in validations) {
             if (Object.prototype.hasOwnProperty.call(validations, key)) {
                 return evaluate(validations[key], data);
